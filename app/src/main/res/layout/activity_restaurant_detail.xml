@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantDetailActivity"
+   >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/detail_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="#ffffff"
+            android:background="@color/colorPrimaryDark"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="MoFood"
+            android:minHeight="?actionBarSize"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+  <LinearLayout
+      android:id="@+id/header_linear_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_below="@id/detail_app_bar_layout"
+      android:weightSum="8">
+      <TextView
+          android:text="Choose from menu:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:layout_margin="3dp"
+          android:padding="2dp"
+          android:layout_weight="7"/>
+
+      <ImageView
+          android:id="@+id/detail_is_fav_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_favorite_border"
+          android:layout_margin="3dp"
+          android:padding="2dp"
+          android:layout_weight="1"
+          />
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/detail_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/header_linear_layout"/>
+
+    <Button
+        android:id="@+id/btn_proceed_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed_to_cart"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"/>
+
+</RelativeLayout>

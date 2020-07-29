@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="18dp">
+
+        <TextView
+            android:id="@+id/order_history_rest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/order_history_placed_date"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="?actionBarSize"
+            />
+
+        <TextView
+            android:id="@+id/order_history_placed_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/7/2020"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toRightOf="@id/order_history_rest_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="?actionBarSize"
+          />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_history_rest_name"
+        android:layout_margin="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

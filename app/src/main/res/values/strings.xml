@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MoFood</string>
+    <string name="enter_mobile_number_10_digits">Enter Mobile Number(10 digits)</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Don\'t have an account? Sign Up</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="deliver_address">Deliver Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="submit">Submit</string>
+    <string name="opendrawer">Open Drawer</string>
+    <string name="closedrawer">Close Drawer</string>
+    <string name="add">ADD</string>
+    <string name="remove">Remove</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="order_history">Order History</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="proceed_to_cart">Proceed To Cart</string>
+</resources>
